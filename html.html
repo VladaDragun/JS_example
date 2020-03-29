@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DHTML</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<header>
+		<div>
+			<p>Покупайте телефоны у нас!</p>
+		</div>
+	</header>
+
+
+<div class="myForm">
+	<form name="dataForm" onsubmit="return false;">
+		
+		<p>
+			<label for="input" class="labels">Введите текст: </label> <br>
+			<input type="text" name="input" id="input">
+		</p>
+
+		<p>
+			<label for="select_choice" class="labels">Список моделей телефонов</label> <br>
+			<select id="select_choice" name="select_choice">
+				<option value="iPhone">iPhone</option>
+				<option value="Samsung">Samsung</option>
+				<option value="Nokia">Nokia</option>
+				<option value="Huawei">Huawei</option>
+				<option value="Sony">Sony</option>
+				<option value="Lenovo">Lenovo</option>
+			</select>
+		</p>
+
+		<div class="but">
+			<button type="reset" class="butt" onclick="delete_elem();">Удалить из списка</button>
+			<button class="butt" onclick="add_opt();">Добавить элемент из текстового поля</button>
+			<button class="butt" onclick="image();">Отобразить все удалённые значения в таблице</button>
+		</div>
+
+		<div class="invisible">
+			<table id="results">
+				<caption class="labels">Удалённые элементы</caption>
+				<tr>
+					<td>Порядковый номер</td>
+					<td>Значение</td>
+					<td>Количество элементов, оставшихся в списке</td>
+				</tr>
+			</table>
+		</div>
+
+	</form>
+</div>
+
+
+	<footer>
+		<div>
+			<p>©Телефончики 2019</p>
+		</div>
+	</footer>
+
+</body>
+</html>
